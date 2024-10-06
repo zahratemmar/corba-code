@@ -1,0 +1,13 @@
+module testapp{
+    struct data{
+        long p;
+        long m;
+        long id;
+    };
+
+    interface Test1{
+        data matchMe(); 
+        data movePeice(in data d);
+        oneway void shutdown();
+        }; 
+    };
