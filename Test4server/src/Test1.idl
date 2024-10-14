@@ -1,0 +1,21 @@
+module testapp{
+    struct data{
+        long px;
+        long py;
+        long mx;
+        long my;
+        long id;
+        boolean win;
+    };
+    struct matchData{
+        long k;
+        long id;
+    };
+    interface Test1{
+        matchData matchMe(); 
+        data movePeice(in data d);
+        void update(in long id);
+        oneway void shutdown();
+        }; 
+    };
+    
